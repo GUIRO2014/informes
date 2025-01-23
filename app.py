@@ -6,6 +6,8 @@ from docx.shared import Inches
 from docx.shared import Inches
 
 import io
+import pip
+pip.main(["install","python-docx"])
 
 def create_report(template_path,data,chart_data=None):
     st.write("Iniciando la creación del informe...")
